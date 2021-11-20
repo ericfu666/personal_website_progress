@@ -1,45 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <link rel="icon" href="imgs/favicon.ico"> -->
-	<link rel="stylesheet" href="css/html5reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Interest</title>
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="imgs/personal/icon.jpg">
+		<link rel="stylesheet" href="css/html5reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Interest</title>
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&family=Roboto:wght@300;400&family=Sora:wght@200;400&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	</head>
 
 <body>
 
 	<header>
-		<img src="imgs/personal/logo.png" alt="myLogo">
+		<a href="index.html"><img src="imgs/personal/logo.png" alt="website logo" id="logo"></a>
 		<nav>
 			<ul class="nav_links">
-				<li><a href = "index.html">About Me</a></li>
+				<li><a href = "index.html">About</a></li>
 				<li><a href = "project.html">Project</a></li>
 				<li><a href = "interest.html" id="current">Interest</a></li>
-				<li><a href = "travel.html">Travel</a></li>
 				<li><a href = "contact.html">Contact</a></li>
 			</ul>
 		</nav>
-
 	</header>
 
-	<main>
-        <ol>
-            <li>Saxphone</li>
-            <li>Guitar</li>
-            <li>Basketball</li>
-            <li>Mario Kart</li>
-            <li>Legend of Zelda: Breath of The Wild</li>
-            <li>Karaoke</li>
-            <li>Youtube</li>
-            <li>Hulu</li>
-        </ol>
+	<main class="interest_main">
+		<div class="basketball">
+			
+				<img src="imgs/interest/basketball/kobe_painting.png" alt="a painting of Kobe Bryant" id="kobe_painting">
+		
+			
+				<img src="imgs/interest/basketball/lebron_poster.png" alt="a poster of Lebron" id="lebron_poster">
+			
+			
+				<img src="imgs/interest/basketball/basketball_icon.png" alt="" id="basketball_icon">
+			
+			<div class="text basketball_text">
+				<p>I have been an NBA fan for over ten years and I LOVE the game of basketball. My favorite players are Lebron James and Russell Westbrook.</p>
+			</div>
+		</div>
+
+		<div class="guitar">
+			
+			<img src="imgs/interest/guitar/guitar.png" alt="a guitar" id="guitar_img">
+	
+			<img src="imgs/interest/guitar/notes1.svg" alt="" id="notes1">
+			<img src="imgs/interest/guitar/notes2.svg" alt="" id="notes2">
+			<img src="imgs/interest/guitar/notes3.svg" alt="" id="notes3">
+		
+		
+			
+		
+		<div class="text guitar_text">
+			<p>I learned to play the guitar back in high school just to be cool. Since then, it has become my best friend and brought me so much joy.</p>
+		</div>
+		</div>
+
+		<div class="mario">
+			
+			<img src="imgs/interest/mario kart/mario_logo.png" alt="Super Mario Logo" id="mario_logo">
+	
+			<img src="imgs/interest/mario kart/pipe.png" alt="" id="pipe">
+			<img src="imgs/interest/mario kart/star.png" alt="" id="star">
+			<img src="imgs/interest/mario kart/brick.png" alt="" id="brick">
+			<img src="imgs/interest/mario kart/mario.png" alt="" id="mario_kart">
+		<div class="text mario_text">
+			<p>I have always been a fan of Super Mario, from the classic 2D Mario to my favorite Mario Kart and Mario Odessy. </p>
+		</div>
+		</div>
+
+		<script>
+			document.querySelector("#brick").addEventListener("click",function(){
+				document.querySelector("#star").style.display="block";
+				document.querySelector("#star").classList.add("star_activate");
+			})
+		</script>
+
+
+	<div class="youtube">
+			
+		<img src="imgs/interest/youtube/window.png" alt="" id="window">
+
+		<img src="imgs/interest/youtube/logo2.png" alt="YouTube Logo" id="youtube_logo">
+		<div class="text youtube_text">
+			<p>I am addicted to watching YouTube. I think there was a time I didn't miss a single day for a whole year. I hope one day I can also be a content creator instead of a viewer.</p>
+		</div>
+	</div>
 
 	</main>
 

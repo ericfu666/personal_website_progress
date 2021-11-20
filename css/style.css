@@ -1,83 +1,37 @@
 body{
-	/* font-family: 'Roboto', sans-serif; */
-	font-family: 'Sora', sans-serif;
-    background-color:#292929;
+    background-color:#222222;
 	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+#logo {
+	width:9vw;
 }
 
-
-.line {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: flex-start;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	font-size: 9vw;
-}
-
-
-.word {
-	margin-right: 3vw;
-}
-
-.color{
-	display:inline-block;
-	color: white;
-	transition: color 3s ease-out 1s;
-	
-	 
-	
-}
-
-.color1:hover{
-	
-	color:red;
-	transition: color 0.1s ease-out 0s;
-	
-	
-}
-.color2:hover{
-	color:blue;
-	transition: color 0.1s ease-out 0s;
-}
-.color3:hover{
-	color:yellow;
-	transition: color 0.1s ease-out 0s;
-}
-.color4:hover{
-	color:green;
-	transition: color 0.1s ease-out 0s;
-}
 
 header{
-	margin-top: 10px;
-	margin-bottom: 10px;
-	background-color:#141414;
+	height:8.5vh;
+	background-color:#1b1b1b;
+	font-family: 'Sora', sans-serif;
+	font-size: 4.3vw;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	justify-content: space-around;
+	position: sticky;
+	top:0;
+	left:0;
+	margin-bottom: 2vh;
+	z-index: 10;
+	
 }
 header li{
-	margin: 5px;
+	margin: 2vw;
 }
-body>header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 header a{
     text-decoration: none;
 	color:white
 }
-
-main{
-	width: 88%;
-	margin:0 auto;
-}
-#current{
-	color:red;
-	font-weight: 900;
-	border: red solid 0.5px;
-}
-
 
 header a:hover{
 	text-decoration: underline;
@@ -90,30 +44,162 @@ header a:hover{
     flex-direction: row;
 }
 
-#myphoto{
+#current{
+	color: white;
+	background: linear-gradient(140deg, #F57684 40%,#85527d 50%,#9581c0 60%,#afc9f7 90%);
+    -webkit-background-clip: text;
+	background-clip: text;
+    -webkit-text-fill-color: transparent;
+	border-width: 2px;
+	border-style: solid;
+	padding: 2px;
+	border-image: linear-gradient(140deg, #F57684 40%,#85527d 50%,#9581c0 60%,#afc9f7 90%) 1;
+
+}
+
+main{
+	width: 88%;
 	margin:0 auto;
 }
 
+#ftc_photo{
+	border-radius: 8%;
+}
 
-#introduction{
+.line {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	font-size: 8vw;
+	line-height: 1.25;
+	margin-top: 3vw;
+	
+}
+.color-primary{
+	color:white;
+}
+.color-secondary{
+	color:rgb(161, 161, 161);
+}
+.word {
+	margin-right: 2vw;
+	
+}
+.color{
+	display: inline-block;
+}
+.technology, .design{
 	color: white;
-	margin: 10px auto;
-	font-size: 15px;
+	background: linear-gradient(140deg, #F57684 40%,#85527d 50%,#9581c0 60%,#afc9f7 90%);
+    -webkit-background-clip: text;
+	background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-#introduction p{
-	margin: 10px auto;
-	font-size: 15px;
+
+.short_intro{
+	margin-top:10vw;
+	font-size: 5.1vw;
+	line-height: 1.8;
 }
-#introduction h1{
-	margin: 10px auto;
-	font-size: 20px;
+
+
+
+
+
+
+
+
+
+
+/* projects preview page */
+
+.proj{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4,88vw);
+	grid-gap: 2vh;
+	
+}
+.proj a{
+	display:inline-block;
+	width:91%;
+	color: white;
+	text-align: left;
+	text-decoration: none;
+	margin-left: 5vw;
+	margin-right:10vw;
+	margin-bottom: 5vw;
+	font-size: 5vw;
+	line-height: 1.3;
+	font-family: 'Sora', sans-serif;
+}
+.proj a:focus{
+
+	text-decoration: underline;
+
+}
+
+#proj1{
+	border-radius: 7%;
+	background-image: linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.3),rgba(0,0,0,0)),url("../imgs/proj/proj1/proj1_poster.png");
+	background-size: cover;
+	display:  flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+
+#proj1 span{
+	color:#F57684;
 	font-weight: bold;
 }
-#philosophy{
 
-	color: red;
-
+#proj2{
+	border-radius: 7%;
+	background-color: #3c3c3c;
+	background-image: linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.3),rgba(0,0,0,0)),url("../imgs/proj/proj2/confucious.PNG");
+	background-size: cover;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
 	
+}
+
+#proj2 span{
+	color:#F57684;
+	font-weight: bold;
+}
+
+#proj3{
+	border-radius: 7%;
+	background-color: white;
+	background-image: linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.3),rgba(0,0,0,0)),url("../imgs/proj/proj3/截屏2021-11-17\ 下午1.14.21.png");
+	background-size: cover;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+#proj3 span{
+	color:#F57684;
+	font-weight: bold;
+}
+
+#proj4{
+	border-radius: 7%;
+	background-color: white;
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0.85),rgba(0,0,0,0.3),rgba(0,0,0,0)),url("../imgs/proj/proj4/截屏2021-11-17\ 下午1.21.42.png");
+	background-size: cover;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+#proj4 span{
+	color:#F57684;
+	font-weight: bold;
 }
 
 .travel_photo{
@@ -125,38 +211,378 @@ header a:hover{
 	margin: 20px;
 }
 
-.proj{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 300px 300px 300px;
-	grid-gap: 20px;
+footer{
+	margin-top: 7.5vh;
+	background-color:#1b1b1b;
+	height:7vh;
+	text-align: center;
+	font-size: 6vw;
+}
+
+
+/* basketball */
+
+.interest_main{
+	width:100%;
+}
+.basketball{
+	position: relative;;
+	width: 100%;
+	height: 80vh;
+	background-image: url("../imgs/interest/basketball/background3.png");
+	background-size: cover;
+	opacity: 0.75;
+	overflow: hidden;
+}
+
+#lebron_poster{
+	width: 70vw;
+	position: absolute;
+	top:40vh;
+	left:39vw;
+	z-index:2;
+}
+
+
+#kobe_painting{
+	position: absolute;
+	width:41vw;
+	top: 1.0vh;
+	left: 2vw;
+}
+
+#kobe_painting:active, #kobe_painting:hover{
+	animation: shake 0.6s;
+}
+
+.basketball_text{
+	position: absolute;
+	background-color: rgb(27, 27, 27);
+	/* border-radius: 0.5em; */
+	opacity: 0.93;
+	height:27vh;
+	width: 77vw;
+	top: 24vh;
+	left: 5vw;
+	font-size: 6vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 4vw 3vw rgb(128, 0, 0);
+}
+
+.basketball_text p{
+	margin: 4vw;
+}
+
+#basketball_icon{
+	position: absolute;
+	width:14vw;
+	height: 14vw;
+	left:5vw;
+	animation: bounce 0.78s  ease-out infinite;
+	
+
 	
 }
-.proj a{
-	color: white;
-	text-align: center;
-}
-#proj1{
-	border-radius: 10px;
-	background-image:url("../imgs/proj/proj1/proj1_poster.png");
+
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+@keyframes bounce {
+	0% {
+	  bottom: 12vh;
+	}
+	50% {
+	  bottom: -3vw;
+	  width: 15.9vw;
+	  height: 12.4vw;
+	}
+	100%{
+		bottom: 12vh;
+		width:14vw;
+		height:14vw;
+	}
+  }
+
+
+
+/* guitar */
+.guitar{
+	position: relative;;
+	width: 100%;
+	height: 80vh;
+	background-image: linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.3),rgba(0,0,0,0)),url("../imgs/interest/guitar/background_phone.png");
 	background-size: cover;
+	opacity: 0.75;
+	overflow: hidden;
+
 }
 
-#proj2{
-	border-radius: 10px;
-	background-image:url("../imgs/proj/proj2/confucious.PNG");
-	background-size: cover;
+#guitar_img{
+	position: absolute;
+	width: 100vw;
+	top:-18vh;
+	left:-20vw;
+}
+.guitar_text{
+	position:absolute;
+	width: 65vw;
+	height: 33vh;
+	top: 15vh;
+	left: 30vw;
+	background-color: rgb(27, 27, 27);
+	opacity: 0.94;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 6vw;
+	box-shadow: 3vw 4vw #5c3452;
+
 }
 
-#proj3{
-	border-radius: 10px;
-	background-image:url("../imgs/proj/proj3/collect_poster.png");
-	background-size: cover;
+.guitar_text p{
+	margin:4vw;
 }
 
-footer{
-	width: 80%;
-	margin:0 auto;
+#notes1{
+	position: absolute;
+	z-index: 100;
+	width:9.5vw;
+	top: 53vh;
+	left: 30vw;
+	animation:  notes_shift 3.3s linear infinite;
+
+}
+#notes2{
+	position: absolute;
+	z-index: 100;
+	width:13vw;
+	top: 53vh;
+	left: 41vw;
+	animation:  notes_shift 2.9s linear infinite;
+}
+#notes3{
+	position: absolute;
+	z-index: 100;
+	width:11vw;
+	top: 56vh;
+	left: 56vw;
+	animation:  notes_shift 3.5s linear infinite;
+}
+
+@keyframes notes_shift {
+	0% { transform:  scale(1); }
+	10% { transform: translate(2vw, -2vw) rotate(10deg) scale(1.1); }
+	20% { transform: translate(6vw, -4.8vw) rotate(0deg) scale(1.18); }
+	30% { transform: translate(9.5vw, -7.8vw) rotate(-11deg) scale(1.26); }
+	40% { transform: translate(13vw, -10.4vw) rotate(1deg) scale(1.34); opacity:0.8}
+	50% { transform: translate(16.8vw, -12.7vw) rotate(10deg) scale(1.42); opacity: 0.6;}
+	60% { transform: translate(20vw, -16vw) rotate(2deg) scale(1.5); opacity: 0.5;}
+	70% { transform: translate(23.7vw, -18.8vw) rotate(-8deg) scale(1.54); opacity: 0.4;}
+	80% { transform: translate(28vw, -21vw) rotate(0deg) scale(1.58); opacity: 0.3;}
+	100% { transform: translate(31.7vw, -23.5vw) rotate(10deg) scale(1.58); opacity: 0.0;}
+  }
+
+
+
+
+/* mario */
+.mario{
+	position: relative;;
+	width: 100%;
+	height: 80vh;
+	background-image: linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.3),rgba(0,0,0,0)),url("../imgs/interest/mario kart/mario_background.jpg");
+	background-size: cover;
+	opacity: 0.75;
+	overflow: hidden;
+
+}
+
+#mario_kart{
+	position: absolute;
+	top:50vh;
+	left:30vw;
+}
+
+#pipe{
+	width: 45vw;
+	position: absolute;
+	bottom:-3vh;
+	left:-8vw;
+}
+
+#brick{
+	width: 45vw;
+	position: absolute;
+	bottom: 7vh;
+	left:0vw;
+}
+
+#star{
+	position: absolute;
+	width:14vw;
+	bottom: 24vh;
+	left:16vw;
+	z-index: 2;
+	display:none;
+	
+}
+
+.star_activate{
+	animation: shine 2.3s linear;
+}
+
+#mario_logo{
+	position: absolute;
+	width:14vw;
+	top: 6vw;
+	right:6vw;
+}
+
+.mario_text{
+	position:absolute;
+	width: 65vw;
+	height: 33vh;
+	top: 12vh;
+	left: 7vw;
+	background-color: rgb(27, 27, 27);
+	opacity: 0.85;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 6vw;
+	box-shadow: 3vw 4vw #3229af;
+
+}
+.mario_text p{
+	margin: 4vw;
+}
+
+
+/* youtube */
+.youtube{
+	position: relative;;
+	width: 100%;
+	height: 80vh;
+	background-image: linear-gradient(to top,rgba(0,0,0,0.75),rgba(0,0,0,0.25),rgba(0,0,0,0.0)),url("../imgs/interest/youtube/background3.jpg");
+	background-size: contain;
+	opacity: 0.65;
+	overflow: hidden;
+
+}
+
+#window{
+	position: absolute;
+	width: 100vw;
+	bottom: 20vh;
+	left: 0;
+	
+}
+
+#youtube_logo{
+	width: 45vw;
+	position: absolute;
+	top: 10vh;
+	left:9vw;
+	z-index: 2;
+
+}
+
+#youtube_logo:hover, #youtube_logo:active{
+	animation: shake 0.8s;
+}
+
+
+
+.youtube_text{
+	position:absolute;
+	width: 75vw;
+	height: 33vh;
+	bottom:25vh;
+	left: 13vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 6vw;
+
+}
+
+@keyframes shake {
+	0% { transform: translate(2px, 2px) rotate(0deg); }
+	10% { transform: translate(-2px, -4px) rotate(-3deg); }
+	20% { transform: translate(-5px, 0px) rotate(3deg); }
+	30% { transform: translate(5px, 4px) rotate(0deg); }
+	40% { transform: translate(2px, -2px) rotate(3deg); }
+	50% { transform: translate(-2px, 4px) rotate(-3deg); }
+	60% { transform: translate(-5px, 2px) rotate(0deg); }
+	70% { transform: translate(5px, 2px) rotate(-3deg); }
+	80% { transform: translate(-2px, -2px) rotate(3deg); }
+	90% { transform: translate(2px, 4px) rotate(0deg); }
+	100% { transform: translate(2px, -4px) rotate(-3deg); }
+  }
+
+
+
+
+@keyframes shine {
+	0% { bottom: 22vh; transform: scale(1) ; opacity:0.0}
+	10% {bottom: 23vh;transform: scale(1) ; opacity: 0.5}
+	20%{bottom: 24vh; transform:  scale(1) ; opacity: 1}
+	30% { transform: scale(1.27) ;}
+	40% {transform: scale(1) ;}
+	50%{transform:  scale(1.18) ;}
+	60%{transform:  scale(1) ;}
+	70%{transform:  scale(1.12) ;}
+	80%{transform:  scale(1) ;}
+	100%{transform: scale(1) ;}
+  }
+
+
+
+@media screen and (min-width: 500px){
+	.color{
+		display:inline-block;
+		transition: color 3s ease-out 1.2s;
+		
+		 
+		
+	}
+	
+	.color1:hover{
+		
+		color:#F57684;
+		transition: color 0.1s ease-out 0s;
+		
+		
+	}
+	.color2:hover{
+		color:#844D7C;
+		transition: color 0.1s ease-out 0s;
+	}
+	.color3:hover{
+		color:#6B5B8C;
+		transition: color 0.1s ease-out 0s;
+	}
+	.color4:hover{
+		color:#7087B0;
+		transition: color 0.1s ease-out 0s;
+	}
+	.color5:hover{
+		color:#9FC2CA;
+		transition: color 0.1s ease-out 0s;
+	}
 }
 
 
@@ -204,3 +630,4 @@ footer{
       
 /* background-color: #4158D0;
 background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+
