@@ -90,9 +90,8 @@ main{
 .color{
 	display: inline-block;
 }
+
 .technology, .design{
-	display: inline;
-	color: white;
 	background: linear-gradient(140deg, #F57684 40%,#85527d 50%,#9581c0 60%,#afc9f7 90%);
     -webkit-background-clip: text;
 	background-clip: text;
