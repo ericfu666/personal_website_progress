@@ -92,12 +92,12 @@ main{
 }
 
 .technology, .design{
+	display: inline;
 	background: linear-gradient(140deg, #F57684 40%,#85527d 50%,#9581c0 60%,#afc9f7 90%);
     -webkit-background-clip: text;
 	background-clip: text;
     -webkit-text-fill-color: transparent;
-		text-fill-color:transparent;
-	-webkit-box-decoration-break: clone;
+
 }
 
 .short_intro{
